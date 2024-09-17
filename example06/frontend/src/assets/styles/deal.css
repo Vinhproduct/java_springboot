@@ -1,0 +1,23 @@
+.card-deal {
+    display: flex;
+    flex-direction: row; /* Căn chỉnh theo hàng ngang */
+}
+.card-deal .col-heading {
+  min-width: 300px;
+  flex-basis: 350px; /* Đặt kích thước cố định cho tiêu đề */
+  flex-shrink: 0; /* Ngăn chặn thu nhỏ tiêu đề */
+}
+.card-deal .row {
+  width: 100%; /* Đảm bảo hàng chiếm hết chiều ngang */
+  margin: 0; /* Loại bỏ margin để tránh khoảng cách */
+}
+.card-deal .items-wrap > [class*=col] {
+  border-left: 1px solid #e5e7ea; /* Đặt đường viền giữa các cột */
+  padding: 0; /* Loại bỏ padding nếu có */
+}
+.card-deal .card-product-grid {
+  margin-bottom: 0; /* Loại bỏ margin phía dưới */
+  text-align: center; /* Căn giữa nội dung trong các thẻ sản phẩm */
+  padding: 0; /* Loại bỏ padding nếu có */
+  border: none; /* Loại bỏ đường viền nếu không cần thiết */
+}
